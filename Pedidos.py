@@ -32,22 +32,22 @@ while True:
         if product_option == 1: # pears
             user_quantity = int(input("Ingrese la cantidad de peras: "))
             if user_quantity <= Pears:
-                shopping_cart[0] = user_quantity
-                Pears - user_quantity
+                shopping_cart[0] += user_quantity
+                Pears -= user_quantity
             else:
                 print("no hay suficientes stock")
         if product_option == 2: # apples
             user_quantity = int(input("Ingrese la cantidad de Manzanas: "))
             if user_quantity <= Apples:
-                shopping_cart[1] = user_quantity
-                Apples - user_quantity
+                shopping_cart[1] += user_quantity
+                Apples -= user_quantity
             else:
                 print("no hay suficientes stock")
         if product_option == 3: # oranges
             user_quantity = int(input("Ingrese la cantidad de Naranjas: "))
             if user_quantity <= Oranges:
-                shopping_cart[2] = user_quantity
-                Oranges - user_quantity
+                shopping_cart[2] += user_quantity
+                Oranges -= user_quantity
             else:
                 print("no hay suficientes stock")
     elif menu_option == "2": # Mostrar carrito
